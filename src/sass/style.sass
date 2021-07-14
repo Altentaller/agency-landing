@@ -7,9 +7,19 @@ $accent-color: #fb414e
 	font-weight: 300
 	font-style: normal
 
+html
+    height: 100%
+
+body
+    display: flex
+    flex-direction: column
+    height: 100%
+
 .container
 	max-width: 1300px
 	margin: 0 auto
+	flex: 1 0 auto 
+	/* 1 flex-grow, 0 flex-shrink, auto flex-basis */
 
 @import 'buttons'		
 @import 'blocks/header'	
