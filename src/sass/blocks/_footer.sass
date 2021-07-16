@@ -1,6 +1,7 @@
 .footer
+    flex: 0 0 auto
     padding: 100px 0 45px 0
-    background-color: #202b30
+    background-color: #202b30    
     h2
         font-family: Roboto
         font-size: 16px
@@ -24,6 +25,9 @@
         color: #ffffff
         > h2
             margin-bottom: 33px 
+        > a 
+            color: #ffffff
+            text-decoration: none
     &__nav
         ul > li
             display: inline
@@ -40,6 +44,11 @@
                     border-bottom: 2px solid $accent-color
                     
     &__social
+        ul 
+            padding: 0
+            > li
+                display: inline-block 
+                margin-right: 25px
     &__subscribe
         margin-top: 110px
         width: 640px
@@ -53,7 +62,6 @@
             padding: 20px
             border: none
             background-color: #ffffff
-            
     &__copy
         margin: 100px 0 0 6px
         font-family: Roboto
