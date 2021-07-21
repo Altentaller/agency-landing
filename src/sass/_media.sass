@@ -283,9 +283,9 @@
             > img            
                 width: 200px
 
-@media (max-width: 767px)
+@media (min-width: 480px) and (max-width: 767px)
     .header
-        padding-bottom: 180px
+        padding-bottom: 80px
         &__title 
             font-size: 35px
         &__desc
@@ -308,3 +308,364 @@
             width: 90%
             padding: 40px            
             margin: 25px
+    .services
+        padding-top: 80px
+        &__title
+            font-size: 45px
+        &__desc
+            width: 440px
+        &__items
+            justify-content: space-around
+        &__item
+            width: 200px
+            &__title
+                font-size: 25px
+    .cta
+        padding: 80px 30px
+        &__items
+            flex-wrap: wrap
+        &__item
+            &:nth-child(1)
+                width: 300px
+            &:nth-child(2)
+                margin-left: 0
+            &:nth-child(3)
+                display: none
+    .about
+        padding: 80px 0 60px 0 
+        &__items 
+            flex-direction: column-reverse       
+        &__item
+            width: 100%
+            margin: 0 30px 
+            &__box
+                width: 400px
+                margin-top: 40px
+                &:nth-child(odd)                     
+                    margin: 40px 40px 40px 0 
+            &__header
+                font-size: 40px
+                mergin-right: 20px
+                width: 400px
+            &__desc
+                > p
+                    width: 400px
+                    margin-top: 60px
+    .works
+        padding: 70px 0 0 0
+        &__filter 
+            ul
+                padding: 0                
+                display: flex
+                flex-direction: column 
+            ul > li
+                margin: 0 auto 
+        &__item
+            width: 150px
+            > img            
+                width: 150px
+    .clients
+        &__items
+            margin: 0 20px 
+            flex-direction: column
+        &__item
+            &__video
+                width: 400px
+                margin: 0 auto                
+                margin-top: 50px
+                img
+                    width: 400px
+                &:hover
+                    &:before
+                        top: 60px
+                        left: 147px
+                    &:after
+                        top: 95px
+                        left: 190px 
+                &:before
+                    top: 60px
+                    left: 147px
+                &:after
+                    top: 95px
+                    left: 190px                
+            &__title
+                text-align: center
+                width: 100%
+                display: block
+                margin: 0 auto
+                &-white
+                    display: block
+                    margin: 40px auto
+                    width: 400px
+                    text-align: left 
+            &__desc
+                width: 100%
+                display: block
+                margin: 40px auto
+                &-white
+                    display: block
+                    margin: 60px auto
+                    width: 400px
+                    text-align: left
+            &__logo
+                margin: 0 auto
+                width: 430px
+                img
+                    width: 35%
+        .btn-accent-black
+            margin: 0 auto
+    .features
+        padding: 80px 30px
+        &__title,
+        &__desc
+            width: 400px
+        &__icons
+            width: 420px
+        &__icon
+            width: 200px
+            margin-right: 25px
+    .form
+        padding: 80px 0
+        &__items
+            flex-direction: column
+        &__item
+            &__title, 
+            &__desc
+                width: 400px
+                display: block
+                margin: 0 auto
+                text-align: left
+                > p
+                    width: 100%
+                    margin: 40px 0
+        &__send
+            width: 400px
+            margin: 0 auto 
+            &__control
+                width: 400px
+                &-small
+                    width: 190px
+        .btn-fullwidth 
+            width: 80%
+    .footer
+        padding: 80px 0 45px 0
+        &__items
+            flex-direction: column
+            margin: 0 40px
+        &__logo
+            margin-bottom: 50px
+        &__address
+            margin-bottom: 45px
+        &__nav
+            display: none
+        &__subscribe
+            margin-left: 0
+            width: 400px
+            > h2
+                text-align: left
+            input
+                width: 240px
+
+@media (max-width: 479px)
+    .header
+        padding-bottom: 80px
+        &__title 
+            font-size: 30px
+        &__desc
+            width: 90%
+            margin-top: 40px
+        &__btn
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            margin-top: 20px
+            > .btn
+                display: block
+                margin: 30px
+    .cards
+        margin-top: -45px
+        &__items
+            flex-direction: column
+            justify-content: space-between
+        &__item
+            width: 90%
+            padding: 40px            
+            margin: 25px
+    .services
+        padding-top: 80px
+        &__title
+            font-size: 45px
+        &__desc
+            width: 80%
+        &__items
+            justify-content: space-around
+        &__item
+            width: 200px
+            margin-top: 40px
+            &__title
+                font-size: 25px
+    .cta
+        padding: 80px 30px
+        &__items
+            flex-wrap: wrap
+        &__item
+            &:nth-child(1)
+                width: 300px
+            &:nth-child(2)
+                margin-left: 0
+            &:nth-child(3)
+                display: none
+    .about
+        padding: 80px 0 60px 0 
+        &__items 
+            flex-direction: column-reverse       
+        &__item
+            width: 90%
+            margin: 0 30px 
+            &__box
+                width: 90%
+                margin-top: 40px
+                &:nth-child(odd)                     
+                    margin: 40px 40px 40px 0 
+            &__header
+                font-size: 40px
+                mergin-right: 20px
+                width: 90%
+            &__desc
+                > p
+                    width: 90%
+                    margin-top: 60px
+    .works
+        padding: 70px 0 0 0
+        &__filter 
+            ul
+                padding: 0                
+                display: flex
+                flex-direction: column 
+            ul > li
+                margin: 0 auto 
+        &__item
+            width: 100%
+            > img            
+                width: 100%
+    .clients
+        &__items
+            margin: 0 20px 
+            flex-direction: column
+        &__item
+            &__video
+                width: 250px
+                margin: 0 auto                
+                margin-top: 50px
+                img
+                    width: 250px
+                &:hover
+                    &:before
+                        top: 40px
+                        left: 100px
+                        width: 50px
+                        height: 50px
+                    &:after
+                        top: 58px
+                        left: 122px
+                        border-top: 8px solid transparent
+                        border-left: 10px solid $accent-color 
+                        border-bottom: 8px solid transparent
+                &:before
+                    top: 40px
+                    left: 100px
+                    width: 50px
+                    height: 50px
+                &:after
+                    top: 58px
+                    left: 122px
+                    border-top: 8px solid transparent
+                    border-left: 10px solid #ffffff
+                    border-bottom: 8px solid transparent              
+            &__title
+                text-align: center
+                width: 100%
+                display: block
+                margin: 0 auto
+                &-white
+                    display: block
+                    margin: 40px auto
+                    width: 100%
+                    text-align: left 
+            &__desc
+                width: 100%
+                display: block
+                margin: 40px auto
+                &-white
+                    display: block
+                    margin: 60px auto
+                    width: 100%
+                    text-align: left
+            &__logo
+                margin: 0 auto
+                width: 100%
+                img
+                    width: 35%
+                    margin-bottom: 30px
+        .btn-accent-black
+            margin: 0 auto
+    .features
+        padding: 80px 30px
+        &__title,
+        &__desc
+            width: 100%
+        &__icons
+            width: 100%
+            flex-direction: column
+        &__icon
+            width: 100%
+            margin: 25px 0 25px 0
+    .form
+        padding: 80px 20px
+        &__items
+            flex-direction: column
+        &__item
+            &__title
+                font-size: 40px
+            &__title, 
+            &__desc
+                width: 100%
+                display: block
+                margin: 0 auto
+                text-align: left
+                > p
+                    width: 100%
+                    margin: 20px 0
+        &__send
+            width: 300px
+            margin: 0 auto 
+            &__control
+                width: 300px
+                &-small
+                    width: 140px
+        .btn-fullwidth 
+            width: 80%
+    .footer
+        padding: 80px 0 45px 0
+        &__items
+            flex-direction: column
+            margin: 0 40px
+        &__logo
+            margin-bottom: 50px
+        &__address
+            margin-bottom: 45px
+            width: 90%
+        &__nav
+            display: none
+        &__subscribe
+            margin-left: 0
+            width: 300px
+            > h2
+                text-align: left
+            input
+                width: 140px
+                padding: 10px
+            .btn-subscribe
+                width: 100px
+                padding: 10px 20px
