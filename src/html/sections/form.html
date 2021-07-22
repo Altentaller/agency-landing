@@ -2,7 +2,7 @@
     <div class="container">
         <div class="form__items">
             <div class="form__item">
-                <div class="form__item__title"
+                <h2 class="form__item__title"
                     data-aos="fade-left"
                     data-aos-delay="50"
                     data-aos-duration="500"
@@ -10,11 +10,11 @@
                     Want to have a
                     proffesional project?
                     Let’s talk about it.
-                </div>
+                </h2>
                 <div class="form__item__desc">
                     <p 
                         data-aos="fade-left"
-                        data-aos-delay="200"
+                        data-aos-delay="150"
                         data-aos-duration="500"
                         data-aos-easing="ease-in-out">
                         Est ultricies integer quis auctor elit sed vulputate mi. Lectus nulla at volutpat diam ut. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Parturient montes nascetur ridiculus mus mauris vitae.
@@ -22,7 +22,7 @@
 
                     <p 
                         data-aos="fade-left"
-                        data-aos-delay="350"
+                        data-aos-delay="200"
                         data-aos-duration="500"
                         data-aos-easing="ease-in-out">
                         Vel fringilla est ullamcorper eget nulla. Urna duis convallis convallis tellus id interdum velit laoreet id. Donec adipiscing tristique risus nec feugiat. Egestas dui id ornare arcu odio ut sem nulla.
@@ -31,27 +31,27 @@
             </div>
             <div class="form__item"
                     data-aos="fade-up-left"
-                    data-aos-delay="550"
+                    data-aos-delay="250"
                     data-aos-duration="800"
                     data-aos-easing="ease-in-out">
                 <form class="form__send">
-                    <input type="text" placeholder="Your name*" class="form__send__control">
-                    <input type="text" placeholder="Company name*" class="form__send__control form__send__control-small">
-                    <input type="text" placeholder="Email address*" class="form__send__control form__send__control-small">
-                    <select class="form__send__control"> 
+                    <input type="text" name="name" placeholder="Your name*" class="form__send__control">
+                    <input type="text" name="company"  placeholder="Company name*" class="form__send__control form__send__control-small">
+                    <input type="email" name="email" placeholder="Email address*" class="form__send__control form__send__control-small">
+                    <select name="service" class="form__send__control"> 
                         <option disabled selected >Select service*</option>
-                        <option>Marketing</option>
-                        <option>Branding</option>
-                        <option>SEO</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Branding">Branding</option>
+                        <option value="SEO">SEO</option>
                       </select>
-                    <textarea rows="7" placeholder="Describe your project*" class="form__send__control"></textarea>
+                    <textarea name="describe" rows="7" placeholder="Describe your project*" class="form__send__control"></textarea>
                 </form>
             </div>
         </div>
 
         <div class="btn btn-fullwidth" 
             data-aos="flip-up"
-            data-aos-delay="800"
+            data-aos-delay="300"
             data-aos-duration="800"
             data-aos-easing="ease-in-out">
             <a href="">Submit</a>
